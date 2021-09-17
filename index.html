@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,7 +8,82 @@
     <link rel="stylesheet" href="CSS/style.css">
     <title>KVB WEB</title>
 </head>
+
 <body>
-    <h1>Git</h1>
+
+<center><img src="https://itproger.com/img/courses/1476977240.jpg" alt="HTML видеокурс"></center>
+
+    <h1 align="center ">Мини Веб Сайт</h1>
+    <table>
+        <tr>
+            <th>
+                <img src="img/Screenshot_1.png" alt="Курсы фронтенд" style="float: left">
+            </th>
+            <td>
+                <p>информация про <mark> изображение</mark>:</p>
+                <details>
+                    <summary>Подробнее</summary>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                </details>
+                <audio controls src="/media/cc0-audio/t-rex-roar.mp3">
+                    Your browser does not support the
+                    <code>audio</code> element.
+                </audio>
+            </td>
+        </tr>
+        <tr>
+            <th>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/2HyhmiG5FXc"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+            </th>
+            <td>
+                <h3>Наши преимущества:</h3>
+                <ul>
+                    <li>Крутые <a href="#">цены</a> ;</li>
+                    <li>Большой выбор;</li>
+                    <li>Хорошие специалисты;</li>
+                </ul>
+            </td>
+        </tr>
+    </table>
+
+    <h2>Зарегистрироватся на событие:</h2>
+    <form action="/my-handling-form-page" method="post">
+
+        <label for="name">Имя:</label>
+        <input type="text" id="name" name="user_name" placeholder="Введите имя">
+        <br>
+        <label for="mail">Емейл:</label>
+        <input type="email" id="mail" name="user_mail" placeholder="Введите емейл">
+        <br>
+        <label for="password">Пароль:</label>
+        <input type="password" id="password" name="user_password">
+    </form>
+    <label for="avatar">Фото профиля:<input type="file" id="avatar" name="avatar"
+            accept="image/png, image/jpeg"></label>
+    <br>
+    <input list="choiseList" id="choice" name="choice" placeholder="Опыт в програмировании" />
+    <datalist id="choiseList">
+        <option value="1 год">
+        <option value="2 года">
+        <option value="3-4 года">
+        <option value="более 5лет">
+    </datalist>
+    <br>
+    <select name="prog">
+        <option disabled="disabled" selected="selected">Любимый язык:</option>
+        <option value="JavaScript">JavaScript</option>
+        <option value="C#">C#</option>
+        <option value="PHP">PHP</option>
+    </select>
+    <br>
+    <input type="checkbox" id="scales" name="scales">
+    <label for="scales">Пользовательское соглашение</label>
+    <br>
+    <input type="submit" value="Отправить">
+    <input type="reset" value="Очистить">
 </body>
+
 </html>
