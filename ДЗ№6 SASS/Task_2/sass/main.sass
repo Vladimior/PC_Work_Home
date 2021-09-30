@@ -1,0 +1,141 @@
+// background 
+$background-ico: url(../images/starter-ico.png) no-repeat 0 0
+$background-body: #efefef url(../images/body.png) repeat-x 0 0
+$background-header: url(../images/header.png) repeat-x 0 0
+
+// fonts
+$font-family: arial, sans-serif
+
+// colors
+$color-main-h3: #000
+$color-main-h2: #424242
+$color-body: #808080
+
+// link colors
+$color-a: #65cbf8
+$color-navi-a: #77777b
+$color-navi-a-hover-active: #2497e0
+$color-main-a: #000
+$color-main-a-hover: #333
+
+// style page sass
+*
+  margin: 0
+  padding: 0
+
+body, html
+  height: 100%
+
+body
+  font-size: 12px
+  line-height: 16px
+  font-family: $font-family
+  color: $color-body
+  background: $background-body
+  min-width: 950px
+
+a
+  color: $color-a
+  text-decoration: none
+  cursor: pointer
+
+  &:hover
+    text-decoration: underline
+
+#wrapper
+  min-height: 100%
+  height: auto !important
+  height: 100%
+  margin: 0 auto -279px
+
+.shell
+  margin: 0 auto
+  width: 950px
+
+.header
+  background: $background-header
+  height: 58px
+  padding: 29px 0 0 0
+
+#navigation
+  float: right
+  padding-top: 8px
+
+  ul
+    list-style: none
+    list-style-position: outside
+    font-size: 11px
+    text-transform: uppercase
+    font-weight: bold
+
+    li
+      float: left
+      padding: 0 0 0 44px
+
+      a
+        color: $color-navi-a
+
+        &:hover
+          color: $color-navi-a-hover-active
+          text-decoration: none
+
+      &.active a
+        color: $color-navi-a-hover-active
+        text-decoration: none
+
+.main
+  padding-top: 42px
+
+  h2
+    font-size: 24px
+    line-height: 24px
+    font-weight: normal
+    color: $color-main-h2
+
+    strong
+      font-weight: bold
+
+  h3
+    font-size: 22px
+    line-height: 22px
+    color: $color-main-h3
+    font-weight: normal
+
+  .cols
+    padding-bottom: 54px
+
+    .col
+      width: 280px
+      float: left
+
+      &:last-of-type
+        width: 274px
+
+      + .col
+        padding-left: 55px
+
+      h3
+        padding-bottom: 14px
+        padding-left: 50px
+
+        a
+          color: $color-main-a
+
+          &:hover
+            text-decoration: none
+            color: $color-main-a-hover
+
+        &.starter-ico
+          background: $background-ico
+
+        &.awesome-ico
+          background: $background-ico
+
+        &.save-ico
+          background: $background-ico
+
+      p
+        padding-bottom: 10px
+
+      a.more
+        text-transform: uppercase

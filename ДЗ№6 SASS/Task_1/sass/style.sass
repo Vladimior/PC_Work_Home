@@ -1,0 +1,23 @@
+$colors: LightGreen, Magenta, Tomato, Tan, GoldenRod, OliveDrab, LightSeaGreen, DeepSkyBlue, Linen
+
+.wrapper
+  display: flex
+  justify-content: center
+  align-items: center
+  flex-wrap: wrap
+  margin: 0 auto
+  width: 1000px
+  div
+    border: 1px solid #545252
+    border-radius: 10px
+    box-sizing: border-box
+    margin: 0 15px 15px 0
+    height: 250px
+    width: 250px
+    &:hover
+      box-shadow: 8.0px 16.0px 16.0px hsl(0deg 0% 0% / 0.25)
+      transform: scale(0.7,0.7)
+
+@each $block in $colors
+  .#{$block}-bg
+    background: $block

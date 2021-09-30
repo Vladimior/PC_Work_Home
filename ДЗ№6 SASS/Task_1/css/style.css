@@ -1,0 +1,66 @@
+.wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: 0 auto;
+  width: 1000px;
+}
+.wrapper div {
+  border: 1px solid #545252;
+  border-radius: 10px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0 15px 15px 0;
+  height: 250px;
+  width: 250px;
+}
+.wrapper div:hover {
+  -webkit-box-shadow: 8px 16px 16px rgba(0, 0, 0, 0.25);
+          box-shadow: 8px 16px 16px rgba(0, 0, 0, 0.25);
+  -webkit-transform: scale(0.7, 0.7);
+          transform: scale(0.7, 0.7);
+}
+
+.LightGreen-bg {
+  background: LightGreen;
+}
+
+.Magenta-bg {
+  background: Magenta;
+}
+
+.Tomato-bg {
+  background: Tomato;
+}
+
+.Tan-bg {
+  background: Tan;
+}
+
+.GoldenRod-bg {
+  background: GoldenRod;
+}
+
+.OliveDrab-bg {
+  background: OliveDrab;
+}
+
+.LightSeaGreen-bg {
+  background: LightSeaGreen;
+}
+
+.DeepSkyBlue-bg {
+  background: DeepSkyBlue;
+}
+
+.Linen-bg {
+  background: Linen;
+}
